@@ -37,7 +37,7 @@ public static IActionResult Run(HttpRequest req, TraceWriter log)
 	}
 
 	// Building the response
-	string incompleteResponse = "Hello, " + name + ", you requested the first " + numberOfTerms + " terms of the Fibonacci series. Here they are: ";
+	string incompleteResponse = "Hello, " + name + ", you requested the first " + numberOfTerms + " terms of the Fibonacci sequence. Here they are: ";
 	string completeResponse = GenerateFibonacciTerms(incompleteResponse, termsToShow);
 	var response = new OkObjectResult(completeResponse); 
 
